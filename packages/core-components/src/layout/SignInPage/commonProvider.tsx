@@ -16,8 +16,6 @@
 
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import { InfoCard } from '../InfoCard/InfoCard';
 import {
   ProviderComponent,
   ProviderLoader,
@@ -25,9 +23,11 @@ import {
   SignInProviderConfig,
 } from './types';
 import { useApi, errorApiRef } from '@backstage/core-plugin-api';
-import { GridItem } from './styles';
 import { ForwardedError } from '@backstage/errors';
 import { UserIdentity } from './UserIdentity';
+import { useStyles } from './styles';
+import GoogleIcon from './assets/GoogleIcon.svg';
+import IndiciumLogo from './assets/company_logo_vertical.png';
 
 const Component: ProviderComponent = ({
   config,
@@ -35,9 +35,10 @@ const Component: ProviderComponent = ({
   onSignInSuccess,
   onSignInFailure,
 }) => {
-  const { apiRef, title, message } = config as SignInProviderConfig;
+  const { apiRef, title } = config as SignInProviderConfig;
   const authApi = useApi(apiRef);
   const errorApi = useApi(errorApiRef);
+  const classes = useStyles();
 
   const handleLogin = async () => {
     try {
@@ -68,19 +69,34 @@ const Component: ProviderComponent = ({
   };
 
   return (
-    <GridItem>
-      <InfoCard
-        variant="fullHeight"
-        title={title}
-        actions={
-          <Button color="primary" variant="outlined" onClick={handleLogin}>
-            Sign In
-          </Button>
-        }
-      >
-        <Typography variant="body1">{message}</Typography>
-      </InfoCard>
-    </GridItem>
+    <>
+      <div className={classes.wrapper}>
+        <div className={classes.card}>
+          <div className={classes.cardImage}>
+            <img src={IndiciumLogo} height={140} alt="Company Logo" />
+          </div>
+          <div className={classes.cardText}>
+            <Typography>
+              Para acessar o App você precisa entrar com a sua conta Google
+              empresarial (@indicium.tech)
+            </Typography>
+            <div className={classes.buttonWrapper}>
+              <div className={classes.wrapperIcon}>
+                <img
+                  src={GoogleIcon}
+                  width={32}
+                  height={32}
+                  alt="Google Icon"
+                />
+              </div>
+              <button className={classes.button} onClick={handleLogin}>
+                Entrar com GOOGLE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

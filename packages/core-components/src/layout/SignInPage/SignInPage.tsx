@@ -69,21 +69,22 @@ export const MultiSignInPage = ({
   }
 
   return (
-    <Page themeId="home">
-      <Header title={configApi.getString('app.title')} />
-      <Content>
-        {title && <ContentHeader title={title} textAlign={align} />}
-        <Grid
-          container
-          justifyContent={align === 'center' ? align : 'flex-start'}
-          spacing={2}
-          component="ul"
-          classes={classes}
-        >
-          {providerElements}
-        </Grid>
-      </Content>
-    </Page>
+    <div className={classes.root}>
+      <Page themeId="home">
+        <Content className={classes.content}>
+          {title && <ContentHeader title={title} textAlign={align} />}
+          <Grid
+            container
+            justifyContent={align === 'center' ? align : 'flex-start'}
+            spacing={2}
+            component="ul"
+            classes={classes}
+          >
+            {providerElements}
+          </Grid>
+        </Content>
+      </Page>
+    </div>
   );
 };
 

@@ -16,40 +16,41 @@
 
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import { InfoCard } from '../InfoCard/InfoCard';
-import { GridItem } from './styles';
 import { ProviderComponent, ProviderLoader, SignInProvider } from './types';
 import { GuestUserIdentity } from './GuestUserIdentity';
+import { useStyles } from './styles';
+import IndiciumLogo from './assets/company_logo_vertical.png';
 
-const Component: ProviderComponent = ({ onSignInStarted, onSignInSuccess }) => (
-  <GridItem>
-    <InfoCard
-      title="Guest"
-      variant="fullHeight"
-      actions={
-        <Button
-          color="primary"
-          variant="outlined"
-          onClick={() => {
-            onSignInStarted();
-            onSignInSuccess(new GuestUserIdentity());
-          }}
-        >
-          Enter
-        </Button>
-      }
-    >
-      <Typography variant="body1">
-        Enter as a Guest User.
-        <br />
-        You will not have a verified identity,
-        <br />
-        meaning some features might be unavailable.
-      </Typography>
-    </InfoCard>
-  </GridItem>
-);
+const Component: ProviderComponent = ({ onSignInStarted, onSignInSuccess }) => {
+  const classes = useStyles();
+
+  return (
+    <>
+      <div className={classes.wrapper}>
+        <div className={classes.card}>
+          <div className={classes.cardImage}>
+            <img src={IndiciumLogo} height={140} alt="Company Logo" />
+          </div>
+          <div className={classes.cardText}>
+            <Typography>
+              Para acessar o App você precisa entrar com a sua conta Google
+              empresarial (@indicium.tech)
+            </Typography>
+            <button
+              className={classes.button}
+              onClick={() => {
+                onSignInStarted();
+                onSignInSuccess(new GuestUserIdentity());
+              }}
+            >
+              Entrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
 const loader: ProviderLoader = async () => {
   return new GuestUserIdentity();
