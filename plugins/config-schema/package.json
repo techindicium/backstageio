@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "@backstage/config": "workspace:^",
-    "@backstage/core-components": "workspace:^",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/errors": "workspace:^",
     "@backstage/theme": "workspace:^",
@@ -32,6 +31,7 @@
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "4.0.0-alpha.61",
+    "@techindicium/core-components": "workspace:^",
     "jsonschema": "^1.2.6",
     "react-use": "^17.2.4",
     "zen-observable": "^0.10.0"

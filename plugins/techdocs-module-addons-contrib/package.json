@@ -33,7 +33,6 @@
     "postpack": "backstage-cli package postpack"
   },
   "dependencies": {
-    "@backstage/core-components": "workspace:^",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/integration": "workspace:^",
     "@backstage/integration-react": "workspace:^",
@@ -43,6 +42,7 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "4.0.0-alpha.61",
     "@react-hookz/web": "^20.0.0",
+    "@techindicium/core-components": "workspace:^",
     "git-url-parse": "^13.0.0",
     "photoswipe": "^5.3.7",
     "react-use": "^17.2.4"

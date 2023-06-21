@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "@backstage/catalog-model": "workspace:^",
-    "@backstage/core-components": "workspace:^",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/errors": "workspace:^",
     "@backstage/integration": "workspace:^",
@@ -35,6 +34,7 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "4.0.0-alpha.61",
     "@octokit/graphql": "^5.0.0",
+    "@techindicium/core-components": "workspace:^",
     "luxon": "^3.0.0",
     "react-use": "^17.2.4"
   },

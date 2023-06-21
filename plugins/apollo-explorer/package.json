@@ -23,11 +23,11 @@
   },
   "dependencies": {
     "@apollo/explorer": "^2.0.0",
-    "@backstage/core-components": "workspace:^",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/theme": "workspace:^",
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.9.1",
+    "@techindicium/core-components": "workspace:^",
     "react-use": "^17.2.4",
     "use-deep-compare-effect": "^1.8.1"
   },

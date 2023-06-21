@@ -1,7 +1,7 @@
 {
-  "name": "@arthurcerqueira/core-components",
-  "description": "Core components used by Backstage plugins and apps",
-  "version": "0.0.36",
+  "name": "@techindicium/core-components",
+  "description": "Core components used by Indicium in Backstage plugins and apps",
+  "version": "0.0.2",
   "publishConfig": {
     "access": "public",
     "main": "dist/index.esm.js",
@@ -13,15 +13,15 @@
   "homepage": "https://backstage.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/backstage/backstage",
+    "url": "https://github.com/techindicium/backstageio",
     "directory": "packages/core-components"
   },
   "keywords": [
     "backstage"
   ],
   "license": "Apache-2.0",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "backstage-cli package build",
     "lint": "backstage-cli package lint",

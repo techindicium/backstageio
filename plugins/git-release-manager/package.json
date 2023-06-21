@@ -23,7 +23,6 @@
     "clean": "backstage-cli package clean"
   },
   "dependencies": {
-    "@backstage/core-components": "workspace:^",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/integration": "workspace:^",
     "@backstage/theme": "workspace:^",
@@ -31,6 +30,7 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "4.0.0-alpha.61",
     "@octokit/rest": "^19.0.3",
+    "@techindicium/core-components": "workspace:^",
     "@types/react": "^16.13.1 || ^17.0.0",
     "luxon": "^3.0.0",
     "qs": "^6.10.1",

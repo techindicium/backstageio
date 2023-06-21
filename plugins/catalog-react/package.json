@@ -47,7 +47,6 @@
   "dependencies": {
     "@backstage/catalog-client": "workspace:^",
     "@backstage/catalog-model": "workspace:^",
-    "@backstage/core-components": "workspace:^",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/errors": "workspace:^",
     "@backstage/integration": "workspace:^",
@@ -61,6 +60,7 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "4.0.0-alpha.61",
     "@react-hookz/web": "^23.0.0",
+    "@techindicium/core-components": "workspace:^",
     "@types/react": "^16.13.1 || ^17.0.0",
     "classnames": "^2.2.6",
     "jwt-decode": "^3.1.0",

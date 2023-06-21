@@ -23,12 +23,12 @@
     "postpack": "backstage-cli package postpack"
   },
   "dependencies": {
-    "@backstage/core-components": "workspace:^",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/theme": "workspace:^",
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "4.0.0-alpha.61",
+    "@techindicium/core-components": "workspace:^",
     "graphql-voyager": "^1.0.0-rc.31",
     "react-use": "^17.2.4"
   },

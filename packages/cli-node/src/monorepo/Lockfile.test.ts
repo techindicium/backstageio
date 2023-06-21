@@ -260,7 +260,7 @@ d@^1:
   dependencies:
     "@backstage/cli": "workspace:^"
     "@backstage/core-app-api": "workspace:^"
-    "@backstage/core-components": "workspace:^"
+    "@techindicium/core-components": "workspace:^"
     "@backstage/core-plugin-api": "workspace:^"
     "@backstage/plugin-permission-react": "workspace:^"
     "@backstage/test-utils": "workspace:^"
@@ -313,7 +313,7 @@ d@^1:
   dependencies:
     "@backstage/cli": "workspace:^"
     "@backstage/core-app-api": "workspace:^"
-    "@backstage/core-components": "workspace:^"
+    "@techindicium/core-components": "workspace:^"
     "@backstage/core-plugin-api": "workspace:^"
     "@backstage/plugin-permission-react": "workspace:^"
     "@backstage/test-utils": "workspace:^"

@@ -47,7 +47,6 @@
   "dependencies": {
     "@backstage/catalog-client": "workspace:^",
     "@backstage/catalog-model": "workspace:^",
-    "@backstage/core-components": "workspace:^",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/errors": "workspace:^",
     "@backstage/plugin-catalog-react": "workspace:^",
@@ -65,6 +64,7 @@
     "@rjsf/material-ui-v5": "npm:@rjsf/material-ui@5.6.0",
     "@rjsf/utils": "5.6.0",
     "@rjsf/validator-ajv8": "5.6.0",
+    "@techindicium/core-components": "workspace:^",
     "@types/json-schema": "^7.0.9",
     "@types/react": "^16.13.1 || ^17.0.0",
     "classnames": "^2.2.6",

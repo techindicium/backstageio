@@ -23,13 +23,13 @@
     "clean": "backstage-cli package clean"
   },
   "dependencies": {
-    "@backstage/core-components": "workspace:^",
     "@backstage/core-plugin-api": "workspace:^",
     "@backstage/theme": "workspace:^",
     "@backstage/types": "workspace:^",
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "4.0.0-alpha.61",
+    "@techindicium/core-components": "workspace:^",
     "react-hook-form": "^7.12.2",
     "react-use": "^17.2.4",
     "uuid": "^8.3.2",
